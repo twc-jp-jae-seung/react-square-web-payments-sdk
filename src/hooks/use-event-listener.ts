@@ -1,17 +1,9 @@
 // Dependencies
 import * as React from 'react';
 
-export const getRefElement = <T>(
-  element?: React.RefObject<Element> | T
-): Element | T | undefined | null | React.RefObject<Element> => {
-  if (element && 'current' in element) {
-    return element.current;
-  }
-
-  return element;
-};
-
-const isSsr = !(typeof window !== 'undefined' && window.document?.createElement);
+const isSsr = !(
+  typeof window !== 'undefined' && window.document?.createElement
+);
 
 type UseEventListenerProps = {
   type: keyof WindowEventMap;
@@ -20,7 +12,12 @@ type UseEventListenerProps = {
   options?: AddEventListenerOptions;
 };
 
-function useEventListener({ type, listener, element = isSsr ? undefined : window, options }: UseEventListenerProps) {
+function useEventListener({
+  type,
+  listener,
+  element = isSsr ? undefined : window,
+  options,
+}: UseEventListenerProps) {
   const savedListener = React.useRef<EventListener>();
 
   React.useEffect(() => {
@@ -32,7 +29,7 @@ function useEventListener({ type, listener, element = isSsr ? undefined : window
   }, []);
 
   React.useEffect(() => {
-    const target = getRefElement(element) as unknown as Element;
+    const target = element as Element;
 
     target?.addEventListener(type, handleEventListener, options);
 
