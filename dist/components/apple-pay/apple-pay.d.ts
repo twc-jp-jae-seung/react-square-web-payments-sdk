@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import type { ApplePayProps } from './apple-pay.types';
 /**
  * Renders a Apple Pay button to use in the Square Web Payment SDK, pre-styled

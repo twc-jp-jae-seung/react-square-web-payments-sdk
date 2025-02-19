@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import type { CreditCardBase, CreditCardChildren, CreditCardFunctionChildren } from './credit-card.types';
 /**
  * Renders a Credit Card Input to use in the Square Web Payment SDK, pre-styled

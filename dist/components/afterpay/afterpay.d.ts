@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { AfterpayContext, AfterpayProvider } from '../../contexts/afterpay';
 import type { AfterpayButtonProps, AfterpayMessageBaseProps, AfterpayMessageCustomComponentProps, AfterpayWidgetProps } from './afterpay.types';
 export declare function AfterpayButton({ Button, buttonColor, buttonType, finalCtaButtonType, id, ...props }: AfterpayButtonProps): JSX.Element;

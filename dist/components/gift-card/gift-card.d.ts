@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import type { GiftCardBase, GiftCardFunctionChildren, GiftCardWithChildren } from './gift-card.types';
 /**
  * Renders a Gift Card Input to use in the Square Web Payment SDK, pre-styled to

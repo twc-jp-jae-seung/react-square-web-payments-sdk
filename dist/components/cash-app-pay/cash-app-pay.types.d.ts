@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import type * as Square from '@square/web-sdk';
 export type CashAppPayProps = React.ComponentPropsWithoutRef<'div'> & {
     callbacks?: {

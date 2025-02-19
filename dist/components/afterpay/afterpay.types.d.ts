@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import type * as Square from '@square/web-sdk';
 export interface AfterpayButtonProps extends Omit<Square.AfterpayButtonOptions, 'useCustomButton'>, React.ComponentPropsWithoutRef<'div'> {
     Button?: React.ElementType;

@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import type { GooglePayProps } from './google-pay.types';
 /**
  * Renders a Google Pay button to use in the Square Web Payment SDK, pre-styled

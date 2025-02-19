@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import type * as Square from '@square/web-sdk';
 import type * as Stitches from '@stitches/react';
 import { PayButton } from './gift-card.styles';
